@@ -1,0 +1,15 @@
+
+表名		说明
+blog_user	用户表(user_id,username,password,icon,real_name,sex,institute,birthday,email,contact,introduce)
+blog_userinfo	用户详细信息表(视图)(user_id,real_name,sex,institute,birthday,email,contact,introduce)
+blog_article	博客表(ba_id,ba_title,ba_content,ba_time,user_id,ba_status)
+blog_sort  	博客分类表(ba_id,bs_id)
+blog_sort_info	分类信息（bs_id,bs_name）
+blog_admin	管理员帐号表(admin_id,admin_name,admin_password)
+blog_notice	公告表(bn_id,bn_title,bn_content,bn_time,admin_id）
+blog_note	评论表(note_id,note_content,note_time,user_id,ba_id)
+blog_index      首页表(bi_id,ba_id,bi_title,bi_describe)
+
+	
+	
+		

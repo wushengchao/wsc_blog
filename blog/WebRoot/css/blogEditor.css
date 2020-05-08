@@ -1,0 +1,56 @@
+@charset "utf-8";
+#title{
+	width:1040px;
+	height:50px;
+	margin: 20px 0 30px 5px;
+	border:1px solid #ccc;
+	border-radius: 2px;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	color:#333;
+	padding: 3px 10px;
+	font-size:30px;
+	background:#E2E2E2; 
+	opacity: 0.6;
+}
+#default{
+	font-size: 25px;
+	color:#ccc;
+}
+#blog_content{
+	height:400px;
+}
+#editor b{
+	color:#666;
+}	
+#editor .btn{
+	border:1px solid #ccc;
+	width:110px;
+	height:40px;
+	border-radius: 4px;
+	color:#aaa;
+	background: #eee;
+	font-size: 25px;
+	margin-top:15px;
+	cursor: pointer; 
+}
+#clear{
+	margin-left:20px;
+}
+body{
+	background: url('../images/bg3.jpg') repeat-x #E2E2E2;
+
+}
+.wangEditor-container{
+	background:#E2E2E2;
+	border-color: #ccc;
+}
+.wangEditor-btn-container{
+	opacity: 0.5;
+
+}
+.wangEditor-textarea{
+	background:#E2E2E2;
+	
+}

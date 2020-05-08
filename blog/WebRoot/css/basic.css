@@ -1,0 +1,395 @@
+@charset "utf-8";
+.clearfix:after {
+	content:".";  
+	height:0;  
+	visibility:hidden;  
+	display:block;  
+	clear:both;  
+}
+body,h1,h3,h2,ul,ol,p{
+	margin:0;
+	padding:0;
+	font-size:16px;
+}
+ul,ol{
+	list-style:inside none none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background-color:#fff;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei UI","Microsoft YaHei",SimHei,"宋体",simsun,sans-serif;
+}
+header{
+	width:1263px;
+	margin: 0 auto;
+	height:80px;
+	padding: 5px 0;
+}
+header .logo{
+	height:80px;
+	width:240px;
+	display: inline-block;
+}
+header ul{
+	float:right;
+	line-height: 80px;
+	font-size:14px;
+	padding-right: 5px;
+	color:#B80000;
+
+}
+header ul a{
+	color:#B80000;
+}
+header li{
+	display: inline-block;
+	cursor: pointer;
+}
+header ul.userinfo{
+	display: none;
+}
+nav{
+	height:80px;
+	width:1263px;
+	border: 1px solid #eee;
+	margin: 0 auto;
+	border-radius: 4px;
+	margin-bottom: 3px; 
+}
+
+nav ul{
+	/*float:left;*/
+	line-height: 80px;
+	font-size:14px;
+	/*padding-right: 5px;*/
+	color:#555;
+
+}
+
+
+nav li {
+	float:left;
+	width:200px;
+	height:80px;
+	text-align: center;
+	line-height: 80px;
+}
+nav li a{
+	display: block;
+
+	font-size: 25px;
+	color:#999;
+}
+nav .active a,
+nav a:hover{
+	background: #1D59A8;
+	color:#fff;
+}
+
+#screen{
+	background:#000;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:999;
+	filter:alpha(opacity=0);	/* IE */
+	opacity:0;
+	display:none;
+}
+#loading{
+	position:absolute;
+	width:200px;
+	height:40px;
+	background:url(../images/login_header.png);
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+	z-index:10000;
+	display:none;
+}
+
+
+#loading p{
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	color:#666;
+	text-indent:50px;
+	font-weight:bold;
+	background:url(../images/loading3.gif)no-repeat 20px center;
+}
+
+#success{
+	position:absolute;
+	top:140px;
+	width:200px;
+	height:40px;
+	background:url(../images/login_header.png);
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+	z-index:10000;
+	display:none;
+}
+#success p{
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	color:#666;
+	text-indent:50px;
+	font-weight:bold;
+	background:url(../images/success.gif)no-repeat 20px center;
+}
+#login{
+	width:350px;
+	height:250px;
+	border:1px solid #ccc;
+	position:absolute;
+	display:none;
+	z-index:9999;
+	background:#fff;
+}
+#login h2{
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	text-align:center;
+	color:#666;
+	background:url(../images/login_header.png) repeat-x;
+	border-bottom:1px solid #ccc;
+	cursor:move;
+}
+#login h2 img{
+	float:right;
+	margin:13px 7px;
+	cursor:pointer;
+}
+#login form{
+	margin:0 13% 25px 13%;
+	font-size:14px;
+	color:#666;
+}
+#login .warn{
+	padding:15px 0 15px 0;
+	text-align:center;
+	color:maroon;
+}
+#login .text{
+	width:200px;
+	height:25px;
+	line-height:25px;
+	border:1px solid #ccc;
+	text-indent:5px;
+}
+#login .pass{
+	margin:10px 0 0 0;
+}
+#login .submit{
+	margin:10px 46px;
+	width:107px;
+	height:30px;
+}
+#login .submit input{
+	width:107px;
+	height:30px;
+	background:url(../images/login_button.png) no-repeat;	
+	border:none;
+	cursor:pointer;
+}
+#login .other{
+	font-size:12px;
+	color:#666;
+	float:right;
+	margin:0 10px 20px 10px;
+	position:absolute;
+	right:0;
+	top:220px;
+}
+#login .other a{
+	color:#666;
+}
+
+#reg{
+	width:550px;
+	height:300px;
+	border:1px solid #ccc;
+	position:absolute;
+	display:none;
+	z-index:9999;
+	background:#fff;
+}
+#reg h2{
+	height:40px;
+	line-height:40px;
+	font-size:13px;
+	text-align:center;
+	color:#666;
+	background:url(../images/login_header.png) repeat-x;
+	border-bottom:1px solid #ccc;
+	cursor:move;
+}
+#reg h2 img{
+	float:right;
+	margin:13px 7px;
+	cursor:pointer;
+	
+}
+#reg dl{
+	font-size:14px;
+	color:#666;
+	margin:20px;
+	padding:0 0 0 10px;
+	position:relative;
+}
+#reg dl dd{
+	height:30px;
+	padding:7px 0;
+}
+#reg dl dd span.info,#reg dl dd span.error,#reg dl dd span.succ{
+	display:block;
+	font-size:12px;
+	color:#333;
+	width:165px;
+	height:32px;
+	line-height:32px;
+	padding:0 0 0 35px;
+	letter-spacing:1px;
+	position:absolute;
+	display:none;
+}
+#reg dl dd span.info{
+	background:url(../images/reg_info.png) no-repeat;	
+	z-index:9999;
+}
+#reg dl dd span.error{
+	background:url(../images/reg_error.png) no-repeat;
+}
+#reg dl dd span.succ{
+	background:url(../images/reg_succ.png) no-repeat;
+	height:14px;
+	line-height:14px;
+	padding:0 0 0 20px;
+}
+#reg dl dd span.loading{
+	position:absolute;
+	top:14px;
+	left:338px;
+	font-size:12px;
+	background:url(../images/loading2.gif)no-repeat;
+	text-indent:22px;
+	padding:1px 0 0 0;
+	display:none;
+}
+#reg dl dd span.info_user{
+	top:3px;
+	left:330px;
+	padding-top:7px;
+	height:43px;
+	line-height:18px;
+	background:url(../images/reg_info2.png) no-repeat;	
+}
+#reg dl dd span.error_user{
+	top:3px;
+	left:330px;
+}
+#reg dl dd span.succ_user{
+	top:12px;
+	left:330px;
+}
+#reg dl dd span.info_pass{
+	width:244px;
+	height:102px;
+	padding:4px 0 0 16px;
+	background:url(../images/reg_info3.png) no-repeat;
+	top:5px;
+	left:330px;
+	
+}
+#reg dl dd span.info_pass p{
+	height:25px;
+	line-height:25px;
+	color:#666;
+	font-size:12px;
+	letter-spacing:0;
+}
+#reg dl dd span.info_pass .q{
+	font-weight:normal;
+	font-size:23px;
+	vertical-align:-2px;
+}
+#reg dl dd span.info_pass .s{
+	color:#ccc;
+}
+#reg dl dd span.error_pass{
+	top:47px;
+	left:330px;
+
+}
+#reg dl dd span.succ_pass{
+	top:57px;
+	left:330px;
+}
+#reg dl dd span.info_notpass{
+	top:89px;
+	left:330px;
+}
+#reg dl dd span.error_notpass{
+	top:89px;
+	left:330px;
+}
+#reg dl dd span.succ_notpass{
+	top:99px;
+	left:330px;
+}
+
+#reg dl dd .text{
+	width:200px;
+	height:25px;
+	line-height:25px;
+	border:1px solid #ccc;
+	text-indent:5px;
+	color:#666;
+}
+
+#reg dl dd .submit{
+	width:143px;
+	height:33px;
+	background:url(../images/reg.png) no-repeat left;
+	border:none;
+	cursor:pointer;
+	
+}
+
+footer{
+	height:100px;
+	margin-top: 20px;
+	background:#B80000; 
+}
+
+footer .top{
+	width:1263px;
+	height:100px;
+	line-height: 100px;
+	color:#fff;
+	margin: 0 auto;
+	text-align: center;
+}
+footer .top p{
+	background:#B80000; 
+}
+footer .bottom{
+	width:auto;
+	height:70px;
+	line-height: 70px;
+	text-align: center;
+}
+footer .bottom p{
+	font-size: 30px;
+	background: #fff;
+	color:#B80000;
+	
+}
+footer .bottom a{
+	color:#B80000;
+	font-family: "方正舒体";
+}

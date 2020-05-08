@@ -1,0 +1,103 @@
+@charset 'utf-8';
+
+clearfix:after {
+	content:".";  
+	height:0;  
+	visibility:hidden;  
+	display:block;  
+	clear:both;  
+}
+body,h1,h3,h2,ul,ol,p{
+	margin:0;
+	padding:0;
+	font-size:16px;
+}
+ul,ol{
+	list-style:inside none none;
+}
+a{
+	text-decoration: none;
+	color:#333;
+}
+body{
+	background-color:#2BCBE1;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei UI","Microsoft YaHei",SimHei,"宋体",simsun,sans-serif;
+}
+
+header{
+	width:100%;
+	background-color:#0297F1;
+	margin: 0;
+	height: 80px;
+}
+header h1 {
+    margin:0 35px;
+    text-align: left;
+    color: #eee;
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 0px 2px 2px #172A39;
+    letter-spacing: 2px;
+    line-height: 75px;
+}
+
+header h1 sup {
+    font-size: 18px;
+    font-style: normal;
+    position: absolute;
+    margin-left: 10px;
+    line-height: 50px;
+}
+
+header ul{
+	float: right;
+	width:auto;
+	margin: 5px;
+	line-height: 30px;
+}
+header ul li{
+	display: inline-block;
+	color:#fff;
+	margin-right:20px; 
+}
+header ul li:hover{
+	/*text-decoration: underline;*/
+}
+header ul a{
+	color:#fff;
+	letter-spacing: 5px;
+}
+header ul a:hover{
+	text-decoration: underline;
+
+}
+
+nav{
+	width:100%;
+	float: left;
+	margin: 0;
+	background: #0487BB;
+	height: 40px;
+}
+nav ul{
+	margin-left: 20px; 
+}
+nav li{
+	display: inline-block;
+	line-height: 40px;
+	width:150px;
+	text-align: center;
+	color:#fff;
+}
+nav li:hover{
+	background: #1A2C3A;
+}
+section{
+	width:100%;
+	float:left;
+	margin: 0 ;
+}
+#iframe{
+	width:100%;
+	height:510px;
+}

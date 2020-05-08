@@ -1,0 +1,70 @@
+@charset 'utf-8';
+@import url(basic.css);
+section .blog_list{
+	margin-top:15px ;
+	
+}
+section .blog_list .titles li{
+	height:40px;
+	line-height: 40px;
+	padding:0 20px;
+	color:#666;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	margin-bottom: 10px; 
+}
+section .blog_list .titles li:hover{
+	background: #eee;
+}
+section .blog_list .delete,
+section .blog_list .show{
+	float: right;
+	width:70px;
+	color:#B80000;
+	display: none;
+}
+section .blog_list .show{
+	color:#1D59A8;
+}
+section .blog_list .show:hover{
+	text-decoration: underline;
+}
+section .blog_list .delete:hover{
+	text-decoration: underline;
+}
+section .blog_list em{
+	display: block;
+	float: right;
+	font-style: normal;
+	color:#666;
+	font-size: 20px;
+}
+section .blog_list p{
+	width:600px;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	font-size: 24px;
+	float:left;
+}
+section .blog_list .page{
+	margin-top:20px; 
+	float:right;
+}
+section .blog_list .page li{
+	display: inline-block;
+	margin-left:5px;
+	color:#666; 
+}
+section .blog_list .page li:hover{
+	text-decoration: underline;
+}
+section .blog_list .page .nowPage{
+	color:#333;
+}
+section .blog_list .page .nowPage:hover{
+	text-decoration: none;
+}
+
+
+

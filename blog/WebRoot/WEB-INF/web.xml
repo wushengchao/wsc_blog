@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>blog</display-name>
+  <session-config>
+	<session-timeout>120</session-timeout>
+  </session-config>
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.hutc.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CheckName</servlet-name>
+    <servlet-class>com.hutc.servlet.CheckName</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.hutc.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddBlogServlet</servlet-name>
+    <servlet-class>com.hutc.servlet.AddBlogServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>QueryNewBlogServlet</servlet-name>
+    <servlet-class>com.hutc.servlet.QueryNewBlogServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MyBlogPageServlet</servlet-name>
+    <servlet-class>com.hutc.servlet.MyBlogPageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowArticleServlet</servlet-name>
+    <servlet-class>com.hutc.servlet.ShowArticleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AllBlogPageServlet</servlet-name>
+    <servlet-class>com.hutc.servlet.AllBlogPageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <servlet-class>com.hutc.servlet.AdminLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteBlogServlet</servlet-name>
+    <servlet-class>com.hutc.servlet.DeleteBlogServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminBlogPageServlet</servlet-name>
+    <servlet-class>com.hutc.servlet.AdminBlogPageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateStatusServlet</servlet-name>
+    <servlet-class>com.hutc.servlet.UpdateStatusServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BlogReviewServlet</servlet-name>
+    <servlet-class>com.hutc.servlet.BlogReviewServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddNoticeServlet</servlet-name>
+    <servlet-class>com.hutc.servlet.AddNoticeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BlogSortListByPage</servlet-name>
+    <servlet-class>com.hutc.servlet.BlogSortListByPage</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateUserInfo</servlet-name>
+    <servlet-class>com.hutc.servlet.UpdateUserInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddNoteServlet</servlet-name>
+    <servlet-class>com.hutc.servlet.AddNoteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddIndexBlogServlet</servlet-name>
+    <servlet-class>com.hutc.servlet.AddIndexBlogServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateSortServlet</servlet-name>
+    <servlet-class>com.hutc.servlet.UpdateSortServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckName</servlet-name>
+    <url-pattern>/CheckName</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddBlogServlet</servlet-name>
+    <url-pattern>/AddBlogServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryNewBlogServlet</servlet-name>
+    <url-pattern>/QueryNewBlogServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyBlogPageServlet</servlet-name>
+    <url-pattern>/MyBlogPageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowArticleServlet</servlet-name>
+    <url-pattern>/ShowArticleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AllBlogPageServlet</servlet-name>
+    <url-pattern>/AllBlogPageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <url-pattern>/AdminLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteBlogServlet</servlet-name>
+    <url-pattern>/DeleteBlogServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminBlogPageServlet</servlet-name>
+    <url-pattern>/AdminBlogPageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateStatusServlet</servlet-name>
+    <url-pattern>/UpdateStatusServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BlogReviewServlet</servlet-name>
+    <url-pattern>/BlogReviewServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddNoticeServlet</servlet-name>
+    <url-pattern>/AddNoticeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BlogSortListByPage</servlet-name>
+    <url-pattern>/BlogSortListByPage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateUserInfo</servlet-name>
+    <url-pattern>/UpdateUserInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddNoteServlet</servlet-name>
+    <url-pattern>/AddNoteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddIndexBlogServlet</servlet-name>
+    <url-pattern>/AddIndexBlogServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateSortServlet</servlet-name>
+    <url-pattern>/UpdateSortServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <filter>
+  	<filter-name>CharacterEncoding</filter-name>
+  	<filter-class>com.hutc.filter.CharacterEncodingFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>CharacterEncoding</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  
+   <filter>
+  	<filter-name>MyBlogListFilter</filter-name>
+  	<filter-class>com.hutc.filter.MyBlogListFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>MyBlogListFilter</filter-name>
+  	<url-pattern>/user/myBlogList.jsp</url-pattern>
+  </filter-mapping>
+  
+  
+  
+  <filter>
+  	<filter-name>AllBlogListFilter</filter-name>
+  	<filter-class>com.hutc.filter.AllBlogListFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>AllBlogListFilter</filter-name>
+  	<url-pattern>/blog.jsp</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+  	<filter-name>IndexAdminFilter</filter-name>
+  	<filter-class>com.hutc.filter.IndexAdminFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>IndexAdminFilter</filter-name>
+  	<url-pattern>/admin/index_admin.jsp</url-pattern>
+  	<url-pattern>/index.jsp</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+  	<filter-name>BlogAdminFilter</filter-name>
+  	<filter-class>com.hutc.filter.BlogAdminFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>BlogAdminFilter</filter-name>
+  	<url-pattern>/admin/blog_admin.jsp</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+  	<filter-name>AllNoticeFilter</filter-name>
+  	<filter-class>com.hutc.filter.AllNoticeListFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>AllNoticeFilter</filter-name>
+  	<url-pattern>/admin/notice_admin.jsp</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+  	<filter-name>IndexFilter</filter-name>
+  	<filter-class>com.hutc.filter.IndexFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>IndexFilter</filter-name>
+  	<url-pattern>/index.jsp</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+  	<filter-name>UserInfoFilter</filter-name>
+  	<filter-class>com.hutc.filter.UserInfoFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>UserInfoFilter</filter-name>
+  	<url-pattern>/user/myInfo.jsp</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+  	<filter-name>AllUserFilter</filter-name>
+  	<filter-class>com.hutc.filter.AllUserFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>AllUserFilter</filter-name>
+  	<url-pattern>/admin/user_admin.jsp</url-pattern>
+  </filter-mapping>
+  
+  <welcome-file-list>
+  	<welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+  
+
+  </welcome-file-list>
+</web-app>

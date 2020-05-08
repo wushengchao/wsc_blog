@@ -1,0 +1,107 @@
+@charset 'utf-8';
+.clearfix:after {
+	content:".";  
+	height:0;  
+	visibility:hidden;  
+	display:block;  
+	clear:both;  
+} 
+body,h1,h3,h2,ul,ol,p{
+	margin:0;
+	padding:0;
+	font-size:16px;
+}
+ul,ol{
+	list-style:  inside none none;
+}
+a{
+	text-decoration: none;
+	color:#333;
+}
+body{
+	background-color:#fff;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei UI","Microsoft YaHei",SimHei,"宋体",simsun,sans-serif;
+}
+aside{
+	margin:0;
+	width:170px;
+	float:left;
+	height: 500px;
+	border-right:4px solid #2F6982;
+	padding-top:20px; 
+	background: url("../images/aside_bg.jpg");
+
+}
+aside li{
+	display:block;
+	background: url("../images/bg1.jpg");
+	margin: 0 auto;
+	line-height: 45px;
+	height:45px;
+	color:#2F6982;
+	cursor: pointer;
+	text-align: center;
+}
+aside li:hover{
+	color:#0297F1;
+	border-color:#0297F1; 
+}
+section{
+	background:url("../images/section_bg.jpg");
+	height: 510px;
+	overflow: hidden;
+}
+
+section .list{
+	display: none;
+	/*overflow: hidden; 子元素清除浮动，能保证在该元素内部？？？？section设置即可*/
+}
+section .list .col{
+	float: left;
+	width:400px;
+	height:400px;
+	margin-left:50px; 
+	margin-top:30px; 
+}
+section .list .col li{
+	height:40px;
+	line-height: 40px;
+	margin: 7px;
+	border:1px solid #fff;
+	border-radius: 4px;
+	text-indent: 10px;
+	color: #2F6982;
+	background:url("../images/bg1.jpg") top; 
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	padding-right:20px;
+}
+section .list .col li:hover{
+	border-radius: 4px;
+	text-indent: 10px;
+	color:#fff;
+	border-color:#2BCBE1; 
+	background:url("../images/bg1.jpg") bottom; 
+}
+
+section .page{
+	height:50px;
+	width: 300px;
+	margin-top:20px; 
+	margin-left:650px;
+}
+section  .page li{
+	display: inline-block;
+	margin-left:5px;
+	color:#fff; 
+}
+section  .page li:hover{
+	text-decoration: underline;
+}
+section  .page .nowPage{
+	color:#ddd;
+}
+section  .page .nowPage:hover{
+	text-decoration: none;
+}

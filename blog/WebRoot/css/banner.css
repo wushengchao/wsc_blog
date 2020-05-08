@@ -1,0 +1,147 @@
+@charset 'utf-8';
+@import url('basic.css');
+#banner{
+	background:#8A98C5;
+	height: 400px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#banner .in_banner{
+	width:1263px;
+	margin:0 auto;
+	position: relative;
+}
+#banner img{
+	display: block;
+	position: absolute;
+	z-index: 1;
+}
+#banner .banner_img ul{
+	font-weight: bold;
+	font-size: 40px;
+	position:absolute;
+	top:358px;
+	left:380px;
+	color:#999;
+	cursor:pointer;
+	z-index: 5;
+
+}
+#banner .banner_img li{
+	display: inline-block;
+	width:100px;
+}
+#banner .banner_img span{
+	width:963px;
+	height:30px;
+	position:absolute;
+	top:370px;
+	left:0;
+	background:#fff;
+	opacity:0.3;
+	filter:alpha(opacity=70);
+	z-index:4;
+}
+#banner .type{
+	float: right;
+	position: absolute;
+	right: 0;
+	top:0;
+	z-index: 5;
+}
+#banner .type .h2{
+	width: 300px;
+	text-indent: 40px;
+	height: 70px;
+	line-height: 70px;
+	letter-spacing: 3px;
+	background: #1D59A8;
+	color:#fff;
+	padding: 0;
+	font-size: 25px;
+	font-weight: normal;
+}
+#banner .type li{
+	width: 300px;
+	height:50px;
+	padding:0;
+}
+
+#banner .type a{
+	display: block;
+	font-size: 16px;
+	height:50px;
+	line-height: 50px;
+	letter-spacing: 2px;
+	text-align: center;
+	padding:0;
+	color:#fff;
+	background-color:rgba(0,0,0,0.5);
+}
+#banner .type a:hover{
+	background: rgba(255,255,255,1);
+	border: none;
+	color:#333;
+}
+#banner .blog_sort{
+	position: absolute;
+	top:0px;
+	left:-963px;
+	width:962px;
+	height:383px;
+	background:#fff;
+	border:1px solid #eee;
+	border-right: none;
+	padding-top:15px;
+	z-index:9;
+	opacity:0;
+	filter:alpha(opacity=0);
+	display: none;
+}
+#banner .blog_sort .col{
+	height:350px;
+	width:290px;
+	display: inline-block;
+	padding:0 10px 10px 10px;
+	margin: 0;
+
+}
+#banner .blog_sort .col_2{
+	border-left: 2px solid #eee;
+	border-right: 2px solid #eee;
+	padding: 0 12px 10px 12px;
+}
+#banner .blog_sort .row{
+	height:140px;
+	width:250px;
+	padding: 20px;
+	/* border:1px solid #eee; */
+	
+}
+#banner .blog_sort .row_1{
+	border-bottom: 2px solid #eee;
+}
+#banner .blog_sort .row_2{
+	margin-top: 10px;
+}
+#banner .blog_sort .row h2{
+	line-height: 30px;
+	height:60px;
+	font-size:22px;
+	color:#555;
+
+	background: #fff;
+}
+#banner .blog_sort .row p{
+	height:66px;
+	line-height: 22px;
+	color:#777;
+	margin-top: 5px;
+	margin-left:10px;
+	font-size:16px;
+	overflow:hidden; 
+	display:-webkit-box; 
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:3; 
+
+}

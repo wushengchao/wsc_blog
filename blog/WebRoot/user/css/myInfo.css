@@ -1,0 +1,209 @@
+@charset 'utf-8';
+@import url('basic.css');
+section .user-info{
+	line-height: 50px;
+	color:#555;
+	margin: 20px auto;
+	font-size:20px;
+
+}
+
+section .write{
+	cursor: pointer;
+}
+#reg{
+	width:630px;
+	height:550px;
+	border:1px solid #ccc;
+	position:absolute;
+	display: none;
+	z-index:9999;
+	background:#fff;
+}
+#reg h2{
+	height:40px;
+	line-height:40px;
+	font-size:13px;
+	text-align:center;
+	color:#666;
+	background:url(../images/login_header.png) repeat-x;
+	border-bottom:1px solid #ccc;
+	cursor:move;
+}
+#reg h2 img{
+	float:right;
+	margin:13px 7px;
+	cursor:pointer;
+	
+}
+#reg dl{
+	font-size:16px;
+	color:#666;
+	margin:20px;
+	padding:0 0 0 10px;
+	position:relative;
+}
+#reg dl dd{
+	height:30px;
+	padding:5px 0;
+	margin-left: 0;
+}
+#reg dl dd span.info,#reg dl dd span.error,#reg dl dd span.succ{
+	display:block;
+	font-size:12px;
+	color:#333;
+	width:165px;
+	height:32px;
+	line-height:32px;
+	padding:0 0 0 35px;
+	letter-spacing:1px;
+	position:absolute;
+	display:none;
+}
+#reg dl dd span.info{
+	background:url(../images/reg_info.png) no-repeat;	
+	z-index:9999;
+}
+#reg dl dd span.error{
+	background:url(../images/reg_error.png) no-repeat;
+}
+#reg dl dd span.succ{
+	background:url(../images/reg_succ.png) no-repeat;
+	height:14px;
+	line-height:14px;
+	padding:0 0 0 20px;
+}
+#reg dl dd span.loading{
+	position:absolute;
+	top:10px;
+	left:300px;
+	font-size:12px;
+	background:url(../images/loading2.gif)no-repeat;
+	text-indent:22px;
+	padding:1px 0 0 0;
+	display:none;
+}
+
+
+#reg dl dd span.info_email{
+	top:203px;
+	left:295px;
+}
+#reg dl dd span.error_email{
+	top:203px;
+	left:295px;
+}
+#reg dl dd span.succ_email{
+	top:212px;
+	left:295px;
+}
+#reg dl dd ul.all_email{
+	width:180px;
+	height:130px;
+	background:#fff;
+	padding:5px 10px;
+	border:1px solid #ccc;
+	position:absolute;
+	top:194px;
+	left:99px;
+	display:none;
+}
+#reg dl dd ul.all_email li{
+	height:25px;
+	line-height:25px;
+	border-bottom:1px solid #E5EDF2;
+	padding:0 5px;
+	cursor:pointer;
+}
+
+#reg dl dd .text{
+	width:200px;
+	height:25px;
+	line-height:25px;
+	border:1px solid #ccc;
+	text-indent:5px;
+	color:#666;
+}
+#reg dl dd select{
+	width:204px;
+	height:28px;
+	line-height:25px;
+	text-indent:5px;
+}
+#reg dl .birthday select{
+	width:58px;
+	text-indent:1px;
+}
+#reg dl dd span.error_birthday{
+	top:241px;
+	left:295px;
+}
+#reg dl dd textarea{
+	height:100px;
+	width:360px;
+	background:#fff;
+	border:1px solid #ccc;
+}
+#reg dl dd.ps{
+	padding:0 0 0 310px;
+}
+#reg dl dd.ps strong.num{
+	padding:0 3px 0 2px;
+}
+#reg dl dd.ps .clear{
+	color:#06f;
+	cursor:pointer;
+}
+#reg dl dd .submit{
+	width:143px;
+	height:33px;
+	border:none;
+	cursor:pointer;
+	background: #5AC1A4;
+	border-radius: 4px;
+	color: #fff;
+	margin-left:15px; 
+	font-size: 16px;
+}
+#loading{
+	position:absolute;
+	width:200px;
+	height:40px;
+	background:url(../images/login_header.png);
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+	z-index:10000;
+	display:none;
+}
+
+
+#loading p{
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	color:#666;
+	text-indent:50px;
+	font-weight:bold;
+	background:url(../images/loading3.gif)no-repeat 20px center;
+}
+
+#success{
+	position:absolute;
+	top:140px;
+	width:200px;
+	height:40px;
+	background:url(../images/login_header.png);
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+	z-index:10000;
+	display:none;
+}
+#success p{
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	color:#666;
+	text-indent:50px;
+	font-weight:bold;
+	background:url(../images/success.gif)no-repeat 20px center;
+}

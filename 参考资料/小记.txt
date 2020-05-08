@@ -1,0 +1,74 @@
+﻿导入出现“<”符号报错，preference->validation->disable all
+max-width:1263px;
+主色:#B80000;
+辅助色：#1D59A8;
+
+base.js中标签选择有bug，如$('#banner ul li') #banner不存在会直接找后面的？？？？？？？？？不清楚/
+
+oracle数据库博文数据类型：
+	BLOB和CLOB都是大字段类型，BLOB是按二进制来存储的，而CLOB是可以直接存储文字的。
+	其实两个是可以互换的的，或者可以直接用LOB字段代替这两个。但是为了更好的管理ORACLE数据库，
+	通常像图片、文件、音乐等信息就用BLOB字段来存储，先将文件转为二进制再存储进去。
+	而像文章或者是较长的文字，就用CLOB存储，这样对以后的查询更新存储等操作都提供很大的方便。
+	这里使用clob
+
+ajax登录问题：
+	使用session保存用户信息但页面不刷新，session的值为上一次的
+	解决用cookie
+
+sql查找前三
+	"select * from Blog_blogs "
+	+ "where rownum<=3 "
+	+ "order by blog_id desc"; oracle降序显示前三 
+
+	mysql:"SELECT title,content,date 
+		FROM blog_blog 
+		ORDER BY date DESC 
+		LIMIT 0,3"
+
+进入首页若存在cookie，跳到servlet将用户保存到session（未完成）
+
+
+溢出显示省略号:
+
+	///***用在block元素上
+
+	多行文本溢出显示省略号(...)
+
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+
+
+	单行文本溢出显示省略号(...)
+
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+
+
+管理员页面子元素清除浮动
+	section .all-blog{
+		overflow: hidden; /*子元素清除浮动，能保证在该元素内部？？？？*/
+
+	}
+
+
+滚动条设置border-radius
+	外层section .content-out{	
+		overflow: hidden;
+		border-radius: 10px;
+	}
+	内层section .content{
+		overflow-y:auto;
+		height:100%;
+	}
+
+
+window.history.go(-1);  //返回上一页
+window.history.back();  //返回上一页
+//如果要强行刷新的话就是：window.history.back();location.reload();
+ 
+window.location.go(-1); //刷新上一页

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>湖师小空间</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/tool.js"></script>
+	<script type="text/javascript" src="js/base.js"></script>
+	<script type="text/javascript" src="js/ajax.js"></script>
+	<script type="text/javascript" src="js/base_drag.js"></script>
+	<script type="text/javascript" src="js/base_form.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/basic.js"></script>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="images/logo.png" height="80" width="240">
+		</div>  
+		<ul class="nologin">
+			<li class="reg">注册</li> &nbsp;|&nbsp;
+			<li class="login">登录</li>
+		</ul>
+		<ul class="userinfo">
+			<li class="info">您好</li> &nbsp;|&nbsp;
+			<a href="user/myBlogList.jsp"><li class="user">用户中心</li></a> &nbsp;|&nbsp;
+			<a href="blogEditor.html"><li class="write">写博文</li></a>
+		</ul>
+	</header>
+	<nav>
+		<ul>
+			<li class="active"><a href="index.html">首页</li></a>
+			<li class="other"><a href="blog.jsp">博文列表</a></li>
+			<li class="other"><a href="music.html">动感音乐</a></li>
+			<li class="other"><a href="photo.html">精彩相册</a></li>
+		</ul>
+	</nav>
+	<div id="screen"></div>
+	<div id="loading">
+		<p>加载中</p>
+	</div>
+	<div id="success">
+		<p>成功</p>
+	</div>
+	<div id="login">
+		<h2>网站登录<img class="close" src="images/close.png"></h2>
+		<form name="login">
+			<div class="info"></div>
+			<div class="user">
+				<label for="user">账号：</label>
+				<input class="text" type="text" name="user" id="user">
+			</div>
+			<div class="pass">
+				<label for="password">密码：</label>
+				<input class="text" type="password" name="pass" id="pass">
+			</div>
+			<div class="submit" name="sub">
+				<input type="button" value="">
+			</div>
+		</form>
+		<div class="other"><a href="#">注册新用户</a> | <a href="#">忘记密码?</a></div>
+	</div>
+	<div id="reg">
+		<h2>用户注册<img class="close" src="images/close.png"></h2>
+		<form name="reg">
+			<dl>
+				<dd> 用 户 名 ： <input type="text" name="user" class="text" autocomplete="off" style="margin-left:2px;">
+					<span class="info info_user">请输入用户名,2~20位，由字母，数字和下划线组成!</span>
+					<span class="error error_user">输入不合法，请重新输入！</span>
+					<span class="succ succ_user">可用！</span>
+					<span class="loading">正在检测用户名...</span>
+				</dd>
+				<dd>密　　码： <input type="password" name="pass" class="text">
+					<span class="info info_pass">
+						<p>安全级别：<strong class="s s1">■■</strong><strong class="s s2">■■</strong><strong class="s s3">■■ </strong><strong class="s s4" style="font-weight:normal;"></strong></p>
+						<p><strong class="q q1">○</strong> 6-20个字符</p>
+						<p><strong class="q q2">○</strong> 只能包含大小写字母、数字和非空字符</p>
+						<p><strong class="q q3">○</strong> 大、小写字母、数字、非空字符，2种以上</p>
+					</span>
+					<span class="error error_pass">输入不合法，请重新输入！</span>
+					<span class="succ succ_pass">可用！</span>
+				</dd>
+				<dd>密码确认： <input type="password" name="notpass" class="text">
+					<span class="info info_notpass">请再一次输入密码！</span>
+					<span class="error error_notpass">输入不一致，请重新输入！</span>
+					<span class="succ succ_notpass">可用！</span>
+				</dd>
+				
+				
+				<dd style="padding:10px 0 0 72px"><input type="button" name="sub" class="submit"></dd>
+			</dl>
+		</form>
+	</div>
+	<div id="banner">
+		<div class="in_banner">
+			<div class="banner_img">
+				<img src="images/banner1.jpg" bg_color="#8A98C5" width="1263" height="400">
+				<img src="images/banner2.jpg" bg_color="#F15E64" width="1263" height="400">
+				<img src="images/banner3.jpg" bg_color="#B2D1D3" width="1263" height="400">
+				<ul>
+					<li>●</li>
+					<li>●</li>
+					<li>●</li>
+				</ul>
+				<span></span>
+			</div>
+			<div class="type">
+				<h2 class="h2">博文类别</h2>
+					<ul>
+						<li style="display: none"></li>
+						<li>
+							<a href="#">时事类</a>
+							<div class="blog_sort sort_1">
+								<div class="col">
+									<div class="row row_1">
+										<h2>女教师“矜持牌坊” 副校长“色心难控” </h2>
+										<p>有关校长系列的丑闻，近几年来可谓是持续不断。祸害青苗，猥亵同僚，潜规女教师，貌似已经成了“校长们”的家常便饭。</p>
+									</div>
+									<div class="row row_2">
+										<h2>贫穷与富有只是一场病的距离</h2>
+										<p>5月18日，网易河北频道28岁的女编辑王雅珊因病去世，这是一个月内第五名因病去世的媒体人；3月7日，王雅珊在微博写下“生命进入倒计...</p>
+									</div>
+								</div>
+								<div class="col col_2">
+									<div class="row row_1">
+										<h2>高铁：不要犯“越地卖履”式错误</h2>
+										<p>日前有消息称，中国在拉美承建的第一条高铁——全长462.27公里、设计时速220公里/..</p>
+									</div>
+									<div class="row row_2">
+										<h2>马晓年性学工作站落户成都</h2>
+										<p>马晓年性学工作站落户成都九龙医院 强强联手打造中国最强性治疗基地造福蓉城及全国百姓 2016年5月9日，“马晓年性学工...</p>
+									</div>
+								</div>
+								<div class="col">
+									<div class="row row_1">
+										<h2>江苏人对高考减招的愤怒</h2>
+										<p>贾也：从江苏到温哥华——中国教育像往公厕里扔孩子，总能激起公愤。</p>
+									</div>
+									<div class="row row_2">
+										<h2>小偷的“工作计划”为何如此有趣？</h2>
+										<p>一个小偷的“工作计划”为何如此有趣？ </p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">娱乐类</a>
+							<div class="blog_sort sort_2">
+								<div class="col">
+									<div class="row row_1">
+										<h2>唐僧在是否动了真情？ </h2>
+										<p>孙悟空？猪八戒？沙和尚？白龙马？白骨精？唐僧在女儿国，主要是表现权力和美色对唐僧的诱惑。唐僧在女儿国，主要是表现权力和美色对唐僧的诱惑</p>
+									</div>
+									<div class="row row_2">
+										<h2>唐僧爱谁</h2>
+										<p>孙悟空？猪八戒？沙和尚？白龙马？白骨精？</p>
+									</div>
+								</div>
+								<div class="col col_2">
+									<div class="row row_1">
+										<h2>唐僧爱谁</h2>
+										<p>孙悟空？猪八戒？沙和尚？白龙马？白骨精？</p>
+									</div>
+									<div class="row row_2">
+										<h2>唐僧爱谁</h2>
+										<p>孙悟空？猪八戒？沙和尚？白龙马？白骨精？</p>
+									</div>
+								</div>
+								<div class="col">
+									<div class="row row_1">
+										<h2>唐僧爱谁</h2>
+										<p>孙悟空？猪八戒？沙和尚？白龙马？白骨精？</p>
+									</div>
+									<div class="row row_2">
+										<h2>唐僧爱谁</h2>
+										<p>孙悟空？猪八戒？沙和尚？白龙马？白骨精？</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">生活类</a>
+							<div class="blog_sort sort_3">
+								<div class="col">
+									<div class="row row_1">
+										<h2>唐僧在女儿国是否动了真情？ </h2>
+										<p>孙悟空？猪八戒？沙和尚？白龙马？白骨精？唐僧在女儿国，主要是表现权力和美色对唐僧的诱惑。唐僧在女儿国，主要是表现权力和美色对唐僧的诱惑</p>
+									</div>
+									<div class="row row_2">
+										<h2>唐僧爱谁</h2>
+										<p>孙悟空？猪八戒？沙和尚？白龙马？白骨精？</p>
+									</div>
+								</div>
+								<div class="col col_2">
+									<div class="row row_1">
+										<h2>唐僧爱谁</h2>
+										<p>孙悟空？猪八戒？沙和尚？白龙马？白骨精？</p>
+									</div>
+									<div class="row row_2">
+										<h2>唐僧爱谁</h2>
+										<p>孙悟空？猪八戒？沙和尚？白龙马？白骨精？</p>
+									</div>
+								</div>
+								<div class="col">
+									<div class="row row_1">
+										<h2>唐僧爱谁</h2>
+										<p>孙悟空？猪八戒？沙和尚？白龙马？白骨精？</p>
+									</div>
+									<div class="row row_2">
+										<h2>唐僧爱谁</h2>
+										<p>孙悟空？猪八戒？沙和尚？白龙马？白骨精？</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">文体类</a></li>
+						<li><a href="#">学术类</a></li>
+						<li><a href="#">其　他</a></li>
+					</ul>
+					<div style="background: #1D59A8;height:30px;width:300px"></div>	
+
+			</div>
+		</div>
+	</div>
+	<div id="main">
+		<section>
+			
+		</section>
+		<aside>
+		
+		</aside>
+	</div>
+	<div class="clearfix"></div> 
+	<footer>
+		<div class="top">
+			<p>中国·浙江 湖州市二环东路759号（313000） 浙ICP备10025412号 浙公网安备 33050202000195号</p>
+		</div>
+		<div class="bottom">
+			<p><a href="#">移动端</a>　｜　<a href="#">PC端</a>　｜　<a href="#">平板</a></p>
+		</div>
+	</footer>
+</body>
+</html>
